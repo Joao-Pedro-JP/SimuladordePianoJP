@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de PianoJP</title>
+    <link rel="stylesheet" href="asset/styles.css" />
+  </head>
+  <body>
+    <div id="piano">
+      <div class="keys">
+        <div class="key" data-note="C">A</div>
+        <div class="key black" data-note="C#">W</div>
+        <div class="key" data-note="D">S</div>
+        <div class="key black" data-note="D#">E</div>
+        <div class="key" data-note="E">D</div>
+        <div class="key" data-note="F">F</div>
+        <div class="key black" data-note="F#">T</div>
+        <div class="key" data-note="G">G</div>
+        <div class="key black" data-note="G#">Y</div>
+        <div class="key" data-note="A">H</div>
+        <div class="key black" data-note="A#">U</div>
+        <div class="key" data-note="B">J</div>
+      </div>
+    </div>
+
+    <div id="tempo-control">
+      <label for="tempo-slider"
+        >Tempo: <span id="tempo-display">120</span> BPM</label
+      >
+      <input type="range" id="tempo-slider" min="40" max="240" value="120" />
+    </div>
+
+    <script src="asset/script.js"></script>
+  </body>
+</html>
